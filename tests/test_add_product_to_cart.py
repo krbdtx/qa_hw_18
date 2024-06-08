@@ -9,14 +9,11 @@ CART_URL = "https://demowebshop.tricentis.com/cart"
 
 
 def test_add_one_product_to_cart():
-    url = API_URL + "/details/72/1"
+    url = API_URL + "/details/31/1"
     Quantity = 55
 
     payload = {
-        "product_attribute_72_5_18": 53,
-        "product_attribute_72_6_19": 54,
-        "product_attribute_72_3_20": 57,
-        "addtocart_72.EnteredQuantity": Quantity
+        "addtocart_31.EnteredQuantity": Quantity
     }
 
     with step("Шаг добавления товара метод POST API"):
